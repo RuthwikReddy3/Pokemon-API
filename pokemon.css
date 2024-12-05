@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to bottom right, #4caf50, #81c784);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container for Button and Card */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    background: linear-gradient(45deg, #ff5722, #ff7043);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Styling */
+.card {
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Pokémon Image */
+.card img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #e0f7fa, #ffffff);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 4px solid #81c784;
+}
+
+/* Pokémon Name */
+.card h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #4caf50;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+/* Pokémon Types */
+.card .types {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.card .types span {
+    padding: 5px 12px;
+    background: #ffecb3;
+    color: #ff9800;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats Section */
+.card .stats {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.card .stats p {
+    font-size: 0.95em;
+    margin: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .stats p strong {
+    color: #4caf50;
+}
+
+.card .stats p::after {
+    content: '';
+    flex: 1;
+    margin-left: 10px;
+    height: 5px;
+    /* background: linear-gradient(90deg, #4caf50, #81c784); */
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+/* Additional Styling */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
